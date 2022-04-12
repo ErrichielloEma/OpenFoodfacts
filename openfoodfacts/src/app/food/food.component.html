@@ -1,0 +1,11 @@
+<div *ngIf="food">
+    <h1>{{ food.brand }}</h1>
+    <p>
+        <img src="{{ food.image_url }}">
+    </p>
+    <p>
+        <p src="{{ food.ecoscore_grade}}"></p>
+        <p src="{{ food.ecoscore_score}}"></p>
+    </p>
+    <p><a href (click)="back()">Back</a></p>
+</div>
