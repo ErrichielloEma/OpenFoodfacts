@@ -1,11 +1,15 @@
 <div *ngIf="food">
     <h1>{{ food.brand }}</h1>
     <p>
-        <img src="{{ food.image_url }}">
+        <img src="{{ food.products.image_url }}">
     </p>
-    <p>
-        <p src="{{ food.ecoscore_grade}}"></p>
-        <p src="{{ food.ecoscore_score}}"></p>
-    </p>
+
+    <div>
+        <a href="{{ food.products.ecoscore_grade}}"></a>
+        <a href="{{ food.products.ecoscore_score}}"></a>
+        
+</div>
+
     <p><a href (click)="back()">Back</a></p>
+
 </div>

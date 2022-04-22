@@ -4,7 +4,7 @@ import { FoodComponent } from './food/food.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-  { path: 'food', component: FoodComponent },
+  { path: 'food/:id}', component: FoodComponent },
   { path: 'search', component: SearchComponent }
 ];
 
